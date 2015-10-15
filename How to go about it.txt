@@ -10,16 +10,31 @@ create a var for keeping track of how many correct and incorrect
 How it works --
 
 On Start 
-Number palceholder is set to 1 out of 5
-Parse object question into question placeholder
-Parse object answers into answer placeholders
-Check answer--
-If question[1] == anwer[3]
-show correct modal
-placeholder++ // which increases to question 2
-else if question[1] != answer[3]
+Create Questions in Object
+Hide Photos
+
+Create Var of
+number Correct // if click correct ++ if click incorrect numberCorrect =0;
+currentQuestion // ++ shows what question we are on
+newQuestion // Which inputs the obect question into the question area
+newAnswer // Inputs new questions from object
+next button in modal should start new question
+
+
+local var
+answer// which is the value of the answer
+
+if (answer == questions[currentQuestion].correct
+numberCorrect++ // increase the correct number for the end
+display modal
+
+else if
 display incorrect modal
-set incorrect += 1
+
+on click of the correct one goes to next question whcih shows and hides certain things
+
+next question function  if current question less than 5 remove everything adn input the new question variable
+else display final modal with the number correct
 
 5 questions
 jQuery
