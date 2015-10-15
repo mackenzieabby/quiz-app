@@ -1,0 +1,31 @@
+Create a basic boilerplate with 
+Style for the app
+Image placeholders for all the images
+Question placeholder
+Answers placeholder
+Modal Popup for correct and  incorrect answers
+Number placeholder for telling the user what question they are on.
+create a var for keeping track of how many correct and incorrect
+
+How it works --
+
+On Start 
+Number palceholder is set to 1 out of 5
+Parse object question into question placeholder
+Parse object answers into answer placeholders
+Check answer--
+If question[1] == anwer[3]
+show correct modal
+placeholder++ // which increases to question 2
+else if question[1] != answer[3]
+display incorrect modal
+set incorrect += 1
+
+5 questions
+jQuery
+Ruby
+Python
+PHP
+Swift
+
+
