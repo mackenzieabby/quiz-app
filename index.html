@@ -6,14 +6,26 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/sweetalert.css">
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
 	<script src="js/jquery.js"></script>
 	<script src="js/app.js"></script>
+	<script src="js/covervid.js"></script>
+	<script src="js/sweetalert.min.js"></script>
+
 </head>
 <body>
-
+	<div class="loading">
+		<h2 id="Intro">Programming Quiz by Mackenzie Abby</h2>
+		<img src="img/loading.gif" alt="Loading" id="loading_gif">
+		<h2 id="loading_text">Loading...</h3>
+		<button id="enter_button">Enter</button>
+	</div>	
+	<button id="reset_game">Reset Game</button>
 	<div class="container">
 		<div class="what_question">
-			<h2>You are on Question <span id="oneNum"> 1 </span> of <span> 5</span> </h2>
+			<h2>You are on Question <span id="oneNum"> 0 </span> of <span> 5</span> </h2>
+			<button id="results">Show Results</button>
 		</div>
 		<div class="image_holder">
 		    <img src="img/jQuery.gif" alt="jQuery Logo" id="jQuery">
@@ -23,15 +35,20 @@
 		    <img src="img/Swift.png" alt="Swift Logo" id="Swift">
 		</div>
 		<div class="question">
-		    <h2>Who created jQuery?</h2>
+		    <h2 id="onlyQuestion"></h2>
 		</div>
 		<div class="answers">
-		    <h2 id="answerOne">Misko Hevery</h2>
-		    <h2 id="answerTwo">John Resig</h2>
-		    <h2 id="answerThree">Satoshi Nakamoto</h2>
-		    <h2 id="answerFour">Nikola Tesla</h2>
+			<h2 id="answerZero"></h2>
+		    <h2 id="answerOne"></h2>
+		    <h2 id="answerTwo"></h2>
+		    <h2 id="answerThree"></h2>
 		</div>
+		<div class="selected">
+			
+		</div>
+		<button id="submit">Check Result</button>
 	</div>
-	
+
+</video>
 </body>
 </html>

@@ -5,26 +5,78 @@
 }
 body {
     font-size: 100%;
-    font-family: Verdana;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+/* Loading Screen */
+.loading {
+    background-image: url(../bg_1.jpg);
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+img#loading_gif {
+    margin-top: 250px;
+}
+#enter_button {
+    margin-top: 100px;
+    -webkit-transition: background-color 1s;
+    -moz-transition: background-color 1s;
+    transition: background-color 1s;
+}
+#enter_button:hover {
+    -webkit-transition: background-color 1s;
+    -moz-transition: background-color 1s;
+    transition: background-color 1s;
+    background-color: #FFFFFF;
+}
+#Intro {
+    text-align: center;
+    color: white;
+    -webkit-transition: color 1s;
+    -moz-transition: color 1s;
+    transition: color 1s;
+    cursor: pointer;
+}
+#Intro:hover {
+    -webkit-transition: color 1s;
+    -moz-transition: color 1s;
+    transition: color 1s;
+    color: #1B7AF0;
+}
+#loading_text {
+    text-align: center;
+    color: white;
+    margin-top: -110px;
+}
+.selected {
+    color: #1AAB41;
+    text-align: center;
+    padding-bottom: 25px;
+    font-size: 1.1rem;
 }
 .container {
     margin: 0 auto;
     width: 960px;
 }
 h2 {
-color: #7F029A;
+color: #8C2FA0;
+font-weight: 300;
+
 }
 span {
-color: #AD0303;
+color: #CA107E;
 }
 #oneNum  {
-    color: #E27000;
+    color: #0B8810;
 }
 img {
     width: 200px;
     display: block;
     margin: 0 auto;
-    margin-top: 100px 
+    margin-top: 50px;
 }
 
 .question {
@@ -55,4 +107,51 @@ img {
     transition: color 1s;
     color: #FF0072;
 }
+button {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 50px;
+    background-color: #0099FF;
+    border: none;
+    -webkit-transition: background-color 1s;
+    -moz-transition: background-color 1s;
+    transition: background-color 1s;
+    border-radius: 5%;
+    z-index: 999;
+}
+button:hover {
+     -webkit-transition: background-color 1s;
+    -moz-transition: background-color 1s;
+    transition: background-color 1s;
+    background-color: #FFFFFF;
+    back: #FFFFFF;
+}
+#results {
+    -webkit-transition: background-color 1s;
+    -moz-transition: background-color 1s;
+    transition: background-color 1s;
+    background-color: #3CFD4A;
+    margin-top: -55px;
+    float: right;;
+}
+#results:hover {
+    -webkit-transition: background-color 1s;
+    -moz-transition: background-color 1s;
+    transition: background-color 1s;
+    background-color: #FFFFFF;
+}
+button#reset_game {
+    float: left;
+    margin-left: 10px;
+    -webkit-transition: background-color 1s;
+    -moz-transition: background-color 1s;
+    transition: background-color 1s;
+}
+button#reset_game:hover{
+    -webkit-transition: background-color 1s;
+    -moz-transition: background-color 1s;
+    transition: background-color 1s;
+    background-color: white;
 
+}
